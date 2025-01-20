@@ -2,6 +2,8 @@ package com.zbn.springbootinit.model.dto.audiofile;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class AudioFileAddRequest {
     /**
@@ -47,4 +49,8 @@ public class AudioFileAddRequest {
      * 图片（可选）
      */
     private String  picture;
+    /**
+     * 标签
+     */
+    private List<String> tags;
 }
