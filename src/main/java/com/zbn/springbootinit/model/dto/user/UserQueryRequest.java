@@ -1,9 +1,10 @@
 package com.zbn.springbootinit.model.dto.user;
 
 import com.zbn.springbootinit.common.PageRequest;
-import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+
+import java.io.Serializable;
 
 /**
  * 用户查询请求
@@ -18,17 +19,6 @@ public class UserQueryRequest extends PageRequest implements Serializable {
      * id
      */
     private Long id;
-
-    /**
-     * 开放平台id
-     */
-    private String unionId;
-
-    /**
-     * 公众号openId
-     */
-    private String mpOpenId;
-
     /**
      * 用户昵称
      */

@@ -6,17 +6,16 @@ import freemarker.template.Template;
 import freemarker.template.TemplateException;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
 import java.util.HashMap;
 import java.util.Map;
-import java.io.FileWriter;
-import java.io.Writer;
 
 /**
  * 代码生成器
  *
  * @author <a href="https://github.com/qwerzbn">zbn</a>
- * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
  */
 public class CodeGenerator {
 
@@ -30,9 +29,9 @@ public class CodeGenerator {
     public static void main(String[] args) throws TemplateException, IOException {
         // 指定生成参数
         String packageName = "com.zbn.springbootinit";
-        String dataName = "用户评论";
-        String dataKey = "userComment";
-        String upperDataKey = "UserComment";
+        String dataName = "音频文件";
+        String dataKey = "audioFile";
+        String upperDataKey = "AudioFile";
 
         // 封装生成参数
         Map<String, Object> dataModel = new HashMap<>();
